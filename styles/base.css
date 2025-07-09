@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 130vh;
+}
+
+footer {
+    /* border: 2px solid tomato;
+    min-height: 50px; */
+    margin: 0 auto;
+    background: rgb(118, 118, 218);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+
+}
+
+header {
+    width: 78%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.intro {
+    background: rgb(118, 118, 218);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+nav {
+    width: 100%;
+    min-height: 50px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a {
+    color: white;
+    font-size: 25px;
+}
+
+.granPa {
+    min-height: 400px;
+    display: flex;
+    width: 76%;
+    margin: 30px auto;
+    gap: 10px;
+    /* border: 2px solid rgb(71, 255, 151); */
+    display: flex;
+    justify-content: center;
+}
+
+.leftGP {
+    border: 2px solid rgb(176, 183, 179);
+    min-height: 800px;
+    width: 60%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.rightGp {
+    border: 2px solid rgb(176, 183, 179);
+    min-height: 800px;
+    width: 40%;
+    border-radius: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+
+
+}
+
+.leftGP h1 {
+    background: rgb(118, 118, 218);
+    min-height: 50px;
+    border-radius: 20px;
+}
+
+.pixCon {
+    /*border: 2px solid tomato;*/
+    min-height: 300px;
+    padding: 30px;
+}
+
+.pixWrit {
+    /* border: 2px solid tomato; */
+    min-height: 300px;
+    width: 70%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pix {
+    /* border: 2px solid tomato; */
+    min-height: 300px;
+    width: 30%;
+}
+
+.pixConFix {
+    display: flex;
+
+}
+
+.me {
+    min-height: 100%;
+    width: 100%;
+}
+
+.line {
+    background: rgb(159, 155, 155);
+    min-height: 1px;
+    width: 70%;
+    margin-top: 4px;
+}
+
+.lineCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    /* border: 2px solid tomato; */
+}
+
+.flagcon {
+    /* border: 2px solid rgb(30, 16, 13); */
+    width: 40%;
+    min-height: 300px;
+}
+
+.flagconRI {
+    /* border: 2px solid rgb(30, 16, 13); */
+    width: 60%;
+    min-height: 300px;
+}
+
+.pixWritDown {
+    display: flex;
+    width: 70%;
+    font-size: 25px;
+    gap: 20px;
+
+
+}
+
+.flag {
+    width: 200px;
+    height: 150px;
+}
+
+.Official {
+    font-size: 20px;
+    padding-top: 30px;
+
+}
+
+.foot {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+}
+
+ul.list {
+    list-style-type: square;
+    padding-left: 20px;
+    margin: 0;
+
+}
+
+ul.list li {
+    font-size: 25px;
+    color: #333;
+
+}
