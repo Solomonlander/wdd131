@@ -8,24 +8,22 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 130vh;
+    font-family: sans-serif;
 }
 
 footer {
-    /* border: 2px solid tomato;
-    min-height: 50px; */
     margin: 0 auto;
     background: rgb(118, 118, 218);
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100px;
-
 }
 
 header {
-    width: 78%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -49,80 +47,74 @@ nav {
     min-height: 50px;
     background: black;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
 }
 
 a {
     color: white;
-    font-size: 25px;
+    font-size: 18px;
+    text-align: center;
+    flex: 1 1 40%;
 }
 
 .granPa {
     min-height: 400px;
     display: flex;
-    width: 76%;
+    flex-direction: column;
+    width: 90%;
     margin: 30px auto;
-    gap: 10px;
-    /* border: 2px solid rgb(71, 255, 151); */
-    display: flex;
-    justify-content: center;
+    gap: 20px;
 }
 
-.leftGP {
-    border: 2px solid rgb(176, 183, 179);
-    min-height: 800px;
-    width: 60%;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
+.leftGP,
 .rightGp {
     border: 2px solid rgb(176, 183, 179);
-    min-height: 800px;
-    width: 40%;
     border-radius: 20px;
-    margin: 0 auto;
     overflow: hidden;
-
-
+    width: 100%;
 }
 
 .leftGP h1 {
     background: rgb(118, 118, 218);
     min-height: 50px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
 .pixCon {
-    /*border: 2px solid tomato;*/
     min-height: 300px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .pixWrit {
-    /* border: 2px solid tomato; */
     min-height: 300px;
-    width: 70%;
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .pix {
-    /* border: 2px solid tomato; */
     min-height: 300px;
-    width: 30%;
+    width: 100%;
 }
 
 .pixConFix {
     display: flex;
-
+    flex-direction: column;
+    gap: 20px;
 }
 
 .me {
-    min-height: 100%;
     width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .line {
@@ -137,59 +129,95 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 30px;
     margin-bottom: 20px;
-    /* border: 2px solid tomato; */
 }
 
-.flagcon {
-    /* border: 2px solid rgb(30, 16, 13); */
-    width: 40%;
-    min-height: 300px;
-}
-
+.flagcon,
 .flagconRI {
-    /* border: 2px solid rgb(30, 16, 13); */
-    width: 60%;
-    min-height: 300px;
+    width: 100%;
+    min-height: 200px;
 }
 
 .pixWritDown {
     display: flex;
-    width: 70%;
-    font-size: 25px;
+    flex-direction: column;
     gap: 20px;
-
-
+    font-size: 18px;
+    margin-top: 20px;
 }
 
 .flag {
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
 }
 
 .Official {
-    font-size: 20px;
-    padding-top: 30px;
-
+    font-size: 16px;
+    padding-top: 10px;
 }
 
 .foot {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     line-height: 30px;
+    padding: 10px;
 }
 
 ul.list {
     list-style-type: square;
-    padding-left: 20px;
+    padding: 20px;
     margin: 0;
-
 }
 
 ul.list li {
-    font-size: 25px;
+    font-size: 20px;
     color: #333;
+}
 
+/* 🔁 Responsive layout for tablets and desktops */
+@media (min-width: 768px) {
+    .granPa {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .leftGP {
+        width: 60%;
+    }
+
+    .rightGp {
+        width: 38%;
+    }
+
+    .pixConFix {
+        flex-direction: row;
+    }
+
+    .pixWrit {
+        width: 70%;
+    }
+
+    .pix {
+        width: 30%;
+    }
+
+    .pixWritDown {
+        flex-direction: row;
+    }
+
+    .flagcon {
+        width: 40%;
+    }
+
+    .flagconRI {
+        width: 60%;
+    }
+
+    a {
+        font-size: 20px;
+        flex: none;
+    }
 }
