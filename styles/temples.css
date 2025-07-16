@@ -45,6 +45,23 @@ nav a:hover {
     background: #0066cc;
 }
 
+nav a:focus {
+    outline: 2px dashed #fff;
+    background: #005bb5;
+}
+
+nav a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav a:last-child {
+    border-bottom: none;
+}
+
+nav {
+    transition: all 0.3s ease-in-out;
+}
+
 main {
     max-width: 800px;
     margin: 0 auto;
