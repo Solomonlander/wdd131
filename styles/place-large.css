@@ -1,0 +1,55 @@
+main {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.data,
+.weather {
+    width: 48%;
+}
+
+/* Pseudo-element icon after weather heading */
+.weather h2::after {
+    content: " ⛅";
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+.hero-container {
+    position: relative;
+}
+
+.hero-container picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-container main {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.hero-container .data,
+.hero-container .weather {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.6);
+    /* white transparent */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #000;
+}
+
+/* Optional: for large-screen weather icon alignment */
+.weather h2::after {
+    content: ' ⛅';
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    color: #ba1a1a;
+}
